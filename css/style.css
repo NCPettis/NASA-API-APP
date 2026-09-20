@@ -1,0 +1,66 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  display: flex;
+  justify-content: center;
+  font-family: "TASA", Arial, Helvetica, sans-serif;
+    background-image: url(img\moon-right-dere.jpg) ;
+    /* overflow: hidden;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: left;
+  
+   
+}
+
+h1{
+  text-align: center;
+  color: #F41A1A;
+}
+header{
+  border: 5px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  height: 50%;
+  width: 50%;
+  border: 10px solid gray;
+}
+img{
+  /* display: none; */
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+  border: 10px solid gray;
+  border-radius: 50%;
+}
+
+#media{
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+#webApp{
+
+  border: 5px solid red;
+  width: 50%;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
