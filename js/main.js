@@ -5,12 +5,8 @@
 
         console.log(inputDate)
 
-        document.querySelector('img').style.display = 'none'
+        document.querySelector('#potd').style.display = 'none'
         document.querySelector('video').style.display = 'none'
-
-// https://api.nasa.gov/planetary/apod?api_key=sTNpgYJIKRYJhaduoIiSv8HsYk4h8iYeyZrZofuD&date=${inputDate} 
-//     })
-// }
 
  document.querySelector('button').addEventListener('click', nasaPics )
  function nasaPics() {
@@ -29,8 +25,8 @@
 
         if(data.media_type == "image"){
          
-         document.querySelector('img').src = data.hdurl
-         document.querySelector('img').style.display = 'block'
+         document.querySelector('#potd').src = data.hdurl
+         document.querySelector('#potd').style.display = 'block'
          document.querySelector('video').style.display = 'none'
         
          
@@ -41,7 +37,7 @@
                 let newDom = virtualDom.parseFromString(basic_html, 'text/html')
                 document.querySelector('video').src = newDom.querySelector('source').src
 
-                document.querySelector('img').style.display = 'none'
+                document.querySelector('#potd').style.display = 'none'
                 document.querySelector('video').style.display = 'block'
 
         }
